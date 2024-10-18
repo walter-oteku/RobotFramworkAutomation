@@ -1,114 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-10-18T13:35:07.734021" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-10-18T14:00:30.770784" rpa="false" schemaversion="5">
 <suite id="s1" name="InformaticsAutomation" source="C:\python-selenium\Robot-TestAtomation\InformaticsAutomation">
 <suite id="s1-s1" name="Successful login" source="C:\python-selenium\Robot-TestAtomation\InformaticsAutomation\Successful_login.robot">
 <test id="s1-s1-t1" name="User Logs in successfully" line="8">
 <kw name="Given user opens Chrome browser with URL ${automation_url}" owner="keywords" source_name="user opens ${browser} browser with URL ${site_url}">
 <kw name="open normal browser ${site_url} ${browser}" owner="Common" source_name="Open normal Browser ${site_url} ${browser}">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-10-18T13:35:09.022838" level="INFO">${options} = &lt;selenium.webdriver.edge.options.Options object at 0x00000160D90A12B0&gt;</msg>
+<msg time="2024-10-18T14:00:32.029983" level="INFO">${options} = &lt;selenium.webdriver.edge.options.Options object at 0x000001AFBBE812B0&gt;</msg>
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].EdgeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-10-18T13:35:09.021860" elapsed="0.001101"/>
+<status status="PASS" start="2024-10-18T14:00:32.026108" elapsed="0.004001"/>
 </kw>
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2024-10-18T13:35:09.024391" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2024-10-18T14:00:32.031354" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
 <arg>${browser}</arg>
 <arg>options=${options}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2024-10-18T13:35:09.023515" elapsed="11.768479"/>
+<status status="PASS" start="2024-10-18T14:00:32.030632" elapsed="6.356002"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-10-18T13:35:20.792531" elapsed="0.771701"/>
+<status status="PASS" start="2024-10-18T14:00:38.387090" elapsed="3.099196"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-10-18T13:35:21.565860" level="INFO">Opening url 'http://savannahinformatics.great-site.net/'</msg>
+<msg time="2024-10-18T14:00:41.487564" level="INFO">Opening url 'http://savannahinformatics.great-site.net/'</msg>
 <arg>${site_url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-10-18T13:35:21.564644" elapsed="3.061585"/>
+<status status="PASS" start="2024-10-18T14:00:41.486664" elapsed="3.071725"/>
 </kw>
-<status status="PASS" start="2024-10-18T13:35:09.017681" elapsed="15.608826"/>
+<status status="PASS" start="2024-10-18T14:00:32.023655" elapsed="12.535227"/>
 </kw>
-<status status="PASS" start="2024-10-18T13:35:09.016339" elapsed="15.610369"/>
+<status status="PASS" start="2024-10-18T14:00:32.022186" elapsed="12.537163"/>
 </kw>
 <kw name="And user waits for 4sec" owner="keywords" source_name="user waits for ${time}">
 <kw name="wait seconds ${time}" owner="Common" source_name="wait seconds ${time}">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-18T13:35:28.630229" level="INFO">Slept 4 seconds.</msg>
+<msg time="2024-10-18T14:00:48.563780" level="INFO">Slept 4 seconds.</msg>
 <arg>${time}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-18T13:35:24.628741" elapsed="4.001703"/>
+<status status="PASS" start="2024-10-18T14:00:44.562299" elapsed="4.001679"/>
 </kw>
-<status status="PASS" start="2024-10-18T13:35:24.627982" elapsed="4.003830"/>
+<status status="PASS" start="2024-10-18T14:00:44.561054" elapsed="4.003168"/>
 </kw>
-<status status="PASS" start="2024-10-18T13:35:24.627141" elapsed="4.005063"/>
+<status status="PASS" start="2024-10-18T14:00:44.559996" elapsed="4.004399"/>
 </kw>
 <kw name="And user enters user as user" owner="keywords" source_name="user enters ${credentials} as ${credentialsfield}">
 <kw name="enters field ${credentialsfield} enter ${credentials}" owner="Common" source_name="enters field ${credentialsfield} enter ${credentials}">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-18T13:35:28.636859" level="INFO">Typing text 'user' into text field '//input[@*='user']|//textarea[@*='user']|//select[@*='user']|//select[@id='user']'.</msg>
+<msg time="2024-10-18T14:00:48.567466" level="INFO">Typing text 'user' into text field '//input[@*='user']|//textarea[@*='user']|//select[@*='user']|//select[@id='user']'.</msg>
 <arg>//input[@*='${credentialsfield}']|//textarea[@*='${credentialsfield}']|//select[@*='${credentialsfield}']|//select[@id='${credentialsfield}']</arg>
 <arg>${credentials}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-18T13:35:28.635494" elapsed="0.881170"/>
+<status status="PASS" start="2024-10-18T14:00:48.566442" elapsed="0.484169"/>
 </kw>
-<status status="PASS" start="2024-10-18T13:35:28.634427" elapsed="0.882572"/>
+<status status="PASS" start="2024-10-18T14:00:48.565655" elapsed="0.485307"/>
 </kw>
 <tag>Login</tag>
-<status status="PASS" start="2024-10-18T13:35:28.632802" elapsed="0.884402"/>
+<status status="PASS" start="2024-10-18T14:00:48.564835" elapsed="0.486350"/>
 </kw>
 <kw name="And user waits for 4sec" owner="keywords" source_name="user waits for ${time}">
 <kw name="wait seconds ${time}" owner="Common" source_name="wait seconds ${time}">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-18T13:35:33.520663" level="INFO">Slept 4 seconds.</msg>
+<msg time="2024-10-18T14:00:53.056432" level="INFO">Slept 4 seconds.</msg>
 <arg>${time}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-18T13:35:29.519764" elapsed="4.001149"/>
+<status status="PASS" start="2024-10-18T14:00:49.055114" elapsed="4.001569"/>
 </kw>
-<status status="PASS" start="2024-10-18T13:35:29.518756" elapsed="4.002498"/>
+<status status="PASS" start="2024-10-18T14:00:49.052632" elapsed="4.004322"/>
 </kw>
-<status status="PASS" start="2024-10-18T13:35:29.517672" elapsed="4.003759"/>
+<status status="PASS" start="2024-10-18T14:00:49.051655" elapsed="4.005524"/>
 </kw>
 <kw name="And user enters user as pass" owner="keywords" source_name="user enters ${credentials} as ${credentialsfield}">
 <kw name="enters field ${credentialsfield} enter ${credentials}" owner="Common" source_name="enters field ${credentialsfield} enter ${credentials}">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-18T13:35:33.526026" level="INFO">Typing text 'user' into text field '//input[@*='pass']|//textarea[@*='pass']|//select[@*='pass']|//select[@id='pass']'.</msg>
+<msg time="2024-10-18T14:00:53.061013" level="INFO">Typing text 'user' into text field '//input[@*='pass']|//textarea[@*='pass']|//select[@*='pass']|//select[@id='pass']'.</msg>
 <arg>//input[@*='${credentialsfield}']|//textarea[@*='${credentialsfield}']|//select[@*='${credentialsfield}']|//select[@id='${credentialsfield}']</arg>
 <arg>${credentials}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-18T13:35:33.524785" elapsed="0.228641"/>
+<status status="PASS" start="2024-10-18T14:00:53.059943" elapsed="0.194298"/>
 </kw>
-<status status="PASS" start="2024-10-18T13:35:33.523314" elapsed="0.230452"/>
+<status status="PASS" start="2024-10-18T14:00:53.058845" elapsed="0.195824"/>
 </kw>
 <tag>Login</tag>
-<status status="PASS" start="2024-10-18T13:35:33.521945" elapsed="0.232093"/>
+<status status="PASS" start="2024-10-18T14:00:53.057720" elapsed="0.197241"/>
 </kw>
 <kw name="And user clicks button login" owner="keywords" source_name="user clicks button ${buttonName}">
 <kw name="click button ${buttonName}" owner="Common" source_name="click button ${buttonName}">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-18T13:35:33.757961" level="INFO">Clicking element '//a[text()='login']|//button[@*='login']|//a[normalize-space()='login']|//input[@*='login']|//button[text()='login']|//span[normalize-space()='login']|//div[@*='login']'.</msg>
+<msg time="2024-10-18T14:00:53.259142" level="INFO">Clicking element '//a[text()='login']|//button[@*='login']|//a[normalize-space()='login']|//input[@*='login']|//button[text()='login']|//span[normalize-space()='login']|//div[@*='login']'.</msg>
 <arg>//a[text()='${buttonName}']|//button[@*='${buttonName}']|//a[normalize-space()='${buttonName}']|//input[@*='${buttonName}']|//button[text()='${buttonName}']|//span[normalize-space()='${buttonName}']|//div[@*='${buttonName}']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-18T13:35:33.756666" elapsed="2.047258"/>
+<status status="PASS" start="2024-10-18T14:00:53.258129" elapsed="1.867295"/>
 </kw>
-<status status="PASS" start="2024-10-18T13:35:33.755660" elapsed="2.048863"/>
+<status status="PASS" start="2024-10-18T14:00:53.256962" elapsed="1.868713"/>
 </kw>
-<status status="PASS" start="2024-10-18T13:35:33.754641" elapsed="2.050475"/>
+<status status="PASS" start="2024-10-18T14:00:53.255666" elapsed="1.870178"/>
 </kw>
 <kw name="And user waits for 5sec" owner="keywords" source_name="user waits for ${time}">
 <kw name="wait seconds ${time}" owner="Common" source_name="wait seconds ${time}">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-10-18T13:35:40.811365" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-10-18T14:01:00.128565" level="INFO">Slept 5 seconds.</msg>
 <arg>${time}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-10-18T13:35:35.809994" elapsed="5.001758"/>
+<status status="PASS" start="2024-10-18T14:00:55.127844" elapsed="5.000933"/>
 </kw>
-<status status="PASS" start="2024-10-18T13:35:35.809013" elapsed="5.003243"/>
+<status status="PASS" start="2024-10-18T14:00:55.127075" elapsed="5.001843"/>
 </kw>
-<status status="PASS" start="2024-10-18T13:35:35.806459" elapsed="5.006132"/>
+<status status="PASS" start="2024-10-18T14:00:55.126240" elapsed="5.002765"/>
 </kw>
 <kw name="Then user waits until Welcome to Our Travel Blog is visible" owner="keywords" source_name="user waits until ${Text} is visible">
 <kw name="wait for visibility ${Text}" owner="Common" source_name="wait for visibility ${Text}">
@@ -117,18 +117,18 @@
 <arg>100</arg>
 <arg>none</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-10-18T13:35:40.816918" elapsed="0.078377"/>
+<status status="PASS" start="2024-10-18T14:01:00.130541" elapsed="0.019471"/>
 </kw>
-<status status="PASS" start="2024-10-18T13:35:40.815182" elapsed="0.080636"/>
+<status status="PASS" start="2024-10-18T14:01:00.129933" elapsed="0.020337"/>
 </kw>
-<status status="PASS" start="2024-10-18T13:35:40.813387" elapsed="0.082822"/>
+<status status="PASS" start="2024-10-18T14:01:00.129272" elapsed="0.021178"/>
 </kw>
-<status status="PASS" start="2024-10-18T13:35:09.014230" elapsed="31.882496"/>
+<status status="PASS" start="2024-10-18T14:00:32.020293" elapsed="28.130559"/>
 </test>
 <doc>Login Feature</doc>
-<status status="PASS" start="2024-10-18T13:35:07.885148" elapsed="33.013041"/>
+<status status="PASS" start="2024-10-18T14:00:30.979228" elapsed="29.172821"/>
 </suite>
-<status status="PASS" start="2024-10-18T13:35:07.824120" elapsed="33.079160"/>
+<status status="PASS" start="2024-10-18T14:00:30.917590" elapsed="29.237093"/>
 </suite>
 <statistics>
 <total>
