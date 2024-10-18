@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-10-18T13:35:07.618364" rpa="false" schemaversion="5">
+<suite id="s1" name="InformaticsAutomation" source="C:\python-selenium\Robot-TestAtomation\InformaticsAutomation">
+<suite id="s1-s1" name="Unsuccessful login" source="C:\python-selenium\Robot-TestAtomation\InformaticsAutomation\Unsuccessful_login.robot">
+<test id="s1-s1-t1" name="Test Unsuccessful Login" line="8">
+<kw name="Given user opens Chrome browser with URL ${automation_url}" owner="keywords" source_name="user opens ${browser} browser with URL ${site_url}">
+<kw name="open normal browser ${site_url} ${browser}" owner="Common" source_name="Open normal Browser ${site_url} ${browser}">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-10-18T13:35:08.532404" level="INFO">${options} = &lt;selenium.webdriver.edge.options.Options object at 0x000001A7FF9C12B0&gt;</msg>
+<var>${options}</var>
+<arg>sys.modules['selenium.webdriver'].EdgeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-10-18T13:35:08.531512" elapsed="0.001022"/>
+</kw>
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-10-18T13:35:08.533668" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser}</arg>
+<arg>options=${options}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-10-18T13:35:08.532994" elapsed="8.128573"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-18T13:35:16.662056" elapsed="3.931794"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-10-18T13:35:20.595035" level="INFO">Opening url 'http://savannahinformatics.great-site.net/'</msg>
+<arg>${site_url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-10-18T13:35:20.594344" elapsed="4.043105"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:08.529010" elapsed="16.108748"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:08.527417" elapsed="16.110568"/>
+</kw>
+<kw name="When user enters test as user" owner="keywords" source_name="user enters ${credentials} as ${credentialsfield}">
+<kw name="enters field ${credentialsfield} enter ${credentials}" owner="Common" source_name="enters field ${credentialsfield} enter ${credentials}">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-18T13:35:24.642295" level="INFO">Typing text 'test' into text field '//input[@*='user']|//textarea[@*='user']|//select[@*='user']|//select[@id='user']'.</msg>
+<arg>//input[@*='${credentialsfield}']|//textarea[@*='${credentialsfield}']|//select[@*='${credentialsfield}']|//select[@id='${credentialsfield}']</arg>
+<arg>${credentials}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T13:35:24.640835" elapsed="1.883718"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:24.639676" elapsed="1.885161"/>
+</kw>
+<tag>Login</tag>
+<status status="PASS" start="2024-10-18T13:35:24.638559" elapsed="1.886543"/>
+</kw>
+<kw name="And user enters 1234 as pass" owner="keywords" source_name="user enters ${credentials} as ${credentialsfield}">
+<kw name="enters field ${credentialsfield} enter ${credentials}" owner="Common" source_name="enters field ${credentialsfield} enter ${credentials}">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-18T13:35:26.529595" level="INFO">Typing text '1234' into text field '//input[@*='pass']|//textarea[@*='pass']|//select[@*='pass']|//select[@id='pass']'.</msg>
+<arg>//input[@*='${credentialsfield}']|//textarea[@*='${credentialsfield}']|//select[@*='${credentialsfield}']|//select[@id='${credentialsfield}']</arg>
+<arg>${credentials}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T13:35:26.528214" elapsed="0.230367"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:26.526860" elapsed="0.232248"/>
+</kw>
+<tag>Login</tag>
+<status status="PASS" start="2024-10-18T13:35:26.525626" elapsed="0.233916"/>
+</kw>
+<kw name="And user clicks button submit" owner="keywords" source_name="user clicks button ${buttonName}">
+<kw name="click button ${buttonName}" owner="Common" source_name="click button ${buttonName}">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-18T13:35:26.765619" level="INFO">Clicking element '//a[text()='submit']|//button[@*='submit']|//a[normalize-space()='submit']|//input[@*='submit']|//button[text()='submit']|//span[normalize-space()='submit']|//div[@*='submit']'.</msg>
+<arg>//a[text()='${buttonName}']|//button[@*='${buttonName}']|//a[normalize-space()='${buttonName}']|//input[@*='${buttonName}']|//button[text()='${buttonName}']|//span[normalize-space()='${buttonName}']|//div[@*='${buttonName}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T13:35:26.763656" elapsed="0.454053"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:26.762092" elapsed="0.455914"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:26.760545" elapsed="0.457660"/>
+</kw>
+<kw name="And user waits for 5sec" owner="keywords" source_name="user waits for ${time}">
+<kw name="wait seconds ${time}" owner="Common" source_name="wait seconds ${time}">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-18T13:35:32.226104" level="INFO">Slept 5 seconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-18T13:35:27.224037" elapsed="5.002311"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:27.221002" elapsed="5.005625"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:27.218859" elapsed="5.008015"/>
+</kw>
+<kw name="Then verify data exists Invalid Username and Password Combination" owner="keywords" source_name="verify data exists ${data}">
+<kw name="verify exists ${data}" owner="Common" source_name="verify exists ${data}">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-10-18T13:35:34.268495" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-18T13:35:34.268839" level="FAIL">Page should have contained element '//span[normalize-space()="Invalid Username and Password Combination"]|//*[text()="Invalid Username and Password Combination"]' but did not.</msg>
+<arg>//span[normalize-space()="${data}"]|//*[text()="${data}"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2024-10-18T13:35:32.229459" elapsed="2.046493">Page should have contained element '//span[normalize-space()="Invalid Username and Password Combination"]|//*[text()="Invalid Username and Password Combination"]' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-10-18T13:35:32.228426" elapsed="2.048488">Page should have contained element '//span[normalize-space()="Invalid Username and Password Combination"]|//*[text()="Invalid Username and Password Combination"]' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-10-18T13:35:32.227396" elapsed="2.049846">Page should have contained element '//span[normalize-space()="Invalid Username and Password Combination"]|//*[text()="Invalid Username and Password Combination"]' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-10-18T13:35:08.525289" elapsed="25.752377">Page should have contained element '//span[normalize-space()="Invalid Username and Password Combination"]|//*[text()="Invalid Username and Password Combination"]' but did not.</status>
+</test>
+<doc>Login Feature</doc>
+<status status="FAIL" start="2024-10-18T13:35:07.770223" elapsed="26.509423"/>
+</suite>
+<status status="FAIL" start="2024-10-18T13:35:07.707462" elapsed="26.578497"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="InformaticsAutomation">InformaticsAutomation</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Unsuccessful login">InformaticsAutomation.Unsuccessful login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

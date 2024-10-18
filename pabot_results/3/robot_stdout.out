@@ -1,0 +1,31 @@
+==============================================================================
+InformaticsAutomation                                                         
+==============================================================================
+InformaticsAutomation.Unsuccessful login :: Login Feature                     
+==============================================================================
+Test Unsuccessful Login                                                 
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\python-selenium\Robot-TestAtomation\InformaticsAutomation\Unsuccessful_login.robot:8
+    T:  Test Unsuccessful Login    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\python-selenium\Robot-TestAtomation\InformaticsAutomation\Unsuccessful_login.robot:14
+      Then verify data exists Invalid Username and Password Combination    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\python-selenium\Robot-TestAtomation\InformaticsAutomation\Resources\keywords.robot:33
+      verify exists ${data}    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\python-selenium\Robot-TestAtomation\InformaticsAutomation\Resources\Common.robot:49
+      Page Should Contain Element    //span[normalize-space()="${data}"]|//*[text()="${data}"]
+      |  //span[normalize-space()="${data}"]|//*[text()="${data}"] = //span[normalize-space()="Invalid Username and Password Combination"]|//*[text()="Invalid Username and Password Combination"] (str)
+______________________________________________________________________________
+| FAIL |
+Page should have contained element '//span[normalize-space()="Invalid Username and Password Combination"]|//*[text()="Invalid Username and Password Combination"]' but did not.
+------------------------------------------------------------------------------
+InformaticsAutomation.Unsuccessful login :: Login Feature             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+InformaticsAutomation                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\python-selenium\Robot-TestAtomation\InformaticsAutomation\pabot_results\3\output.xml

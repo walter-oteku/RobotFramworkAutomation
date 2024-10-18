@@ -1,0 +1,8 @@
+datasources:5b1509415b6887da2cd252f58672fb3070ec2382
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:d826124b28c88a0ef979782d0556911f9027704a
+--suite InformaticsAutomation.Home page
+--suite InformaticsAutomation.Search functionality
+--suite InformaticsAutomation.Successful login
+--suite InformaticsAutomation.Unsuccessful login

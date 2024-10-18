@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.13.0 on win32)" generated="2024-10-18T13:35:07.510971" rpa="false" schemaversion="5">
+<suite id="s1" name="InformaticsAutomation" source="C:\python-selenium\Robot-TestAtomation\InformaticsAutomation">
+<suite id="s1-s1" name="Search functionality" source="C:\python-selenium\Robot-TestAtomation\InformaticsAutomation\Search_functionality.robot">
+<test id="s1-s1-t1" name="User Searches a product successfully" line="8">
+<kw name="Given user opens Chrome browser with URL ${search_url}" owner="keywords" source_name="user opens ${browser} browser with URL ${site_url}">
+<kw name="open normal browser ${site_url} ${browser}" owner="Common" source_name="Open normal Browser ${site_url} ${browser}">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-10-18T13:35:08.408433" level="INFO">${options} = &lt;selenium.webdriver.edge.options.Options object at 0x000001ABF70412B0&gt;</msg>
+<var>${options}</var>
+<arg>sys.modules['selenium.webdriver'].EdgeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-10-18T13:35:08.404900" elapsed="0.003659"/>
+</kw>
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-10-18T13:35:08.409802" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser}</arg>
+<arg>options=${options}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-10-18T13:35:08.409062" elapsed="4.701232"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-18T13:35:13.110753" elapsed="0.327184"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-10-18T13:35:13.439115" level="INFO">Opening url 'https://automationexercise.com/products'</msg>
+<arg>${site_url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-10-18T13:35:13.438392" elapsed="22.268970"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:08.402760" elapsed="27.305040"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:08.401354" elapsed="27.307010"/>
+</kw>
+<kw name="And user waits for 10sec" owner="keywords" source_name="user waits for ${time}">
+<kw name="wait seconds ${time}" owner="Common" source_name="wait seconds ${time}">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-18T13:35:45.715403" level="INFO">Slept 10 seconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-18T13:35:35.712675" elapsed="10.003001"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:35.710916" elapsed="10.005064"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:35.709050" elapsed="10.008983"/>
+</kw>
+<kw name="And user enters Blue Top as search" owner="keywords" source_name="user enters ${credentials} as ${credentialsfield}">
+<kw name="enters field ${credentialsfield} enter ${credentials}" owner="Common" source_name="enters field ${credentialsfield} enter ${credentials}">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-18T13:35:45.724884" level="INFO">Typing text 'Blue Top' into text field '//input[@*='search']|//textarea[@*='search']|//select[@*='search']|//select[@id='search']'.</msg>
+<arg>//input[@*='${credentialsfield}']|//textarea[@*='${credentialsfield}']|//select[@*='${credentialsfield}']|//select[@id='${credentialsfield}']</arg>
+<arg>${credentials}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T13:35:45.723513" elapsed="0.445530"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:45.722391" elapsed="0.447010"/>
+</kw>
+<tag>Login</tag>
+<status status="PASS" start="2024-10-18T13:35:45.718567" elapsed="0.451155"/>
+</kw>
+<kw name="And user waits for 10sec" owner="keywords" source_name="user waits for ${time}">
+<kw name="wait seconds ${time}" owner="Common" source_name="wait seconds ${time}">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-18T13:35:56.176142" level="INFO">Slept 10 seconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-18T13:35:46.174210" elapsed="10.002211"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:46.172619" elapsed="10.004109"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:46.170974" elapsed="10.005937"/>
+</kw>
+<kw name="And user clicks button submit_search" owner="keywords" source_name="user clicks button ${buttonName}">
+<kw name="click button ${buttonName}" owner="Common" source_name="click button ${buttonName}">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-18T13:35:56.191648" level="INFO">Clicking element '//a[text()='submit_search']|//button[@*='submit_search']|//a[normalize-space()='submit_search']|//input[@*='submit_search']|//button[text()='submit_search']|//span[normalize-space()='submit_search']|//div[@*='submit_search']'.</msg>
+<arg>//a[text()='${buttonName}']|//button[@*='${buttonName}']|//a[normalize-space()='${buttonName}']|//input[@*='${buttonName}']|//button[text()='${buttonName}']|//span[normalize-space()='${buttonName}']|//div[@*='${buttonName}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-18T13:35:56.190533" elapsed="3.463921"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:56.178979" elapsed="3.477073"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:56.177882" elapsed="3.478429"/>
+</kw>
+<kw name="And user waits for 10sec" owner="keywords" source_name="user waits for ${time}">
+<kw name="wait seconds ${time}" owner="Common" source_name="wait seconds ${time}">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-18T13:36:09.666102" level="INFO">Slept 10 seconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-18T13:35:59.660687" elapsed="10.005656"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:59.659036" elapsed="10.007630"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:59.657131" elapsed="10.009747"/>
+</kw>
+<kw name="And verify data exists Blue Top" owner="keywords" source_name="verify data exists ${data}">
+<kw name="verify exists ${data}" owner="Common" source_name="verify exists ${data}">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-10-18T13:36:09.709563" level="INFO">Current page contains element '//span[normalize-space()="Blue Top"]|//*[text()="Blue Top"]'.</msg>
+<arg>//span[normalize-space()="${data}"]|//*[text()="${data}"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-10-18T13:36:09.669813" elapsed="0.040003"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:36:09.668648" elapsed="0.041600"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:36:09.667450" elapsed="0.043079"/>
+</kw>
+<kw name="Then user waits until Blue Top is visible" owner="keywords" source_name="user waits until ${Text} is visible">
+<kw name="wait for visibility ${Text}" owner="Common" source_name="wait for visibility ${Text}">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//*[text()='${Text}']|//*[normalize-space()='${Text}']|//*[@id='${Text}']|//i[@class='${Text}']</arg>
+<arg>100</arg>
+<arg>none</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-10-18T13:36:09.714199" elapsed="0.032265"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:36:09.712667" elapsed="0.034284"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:36:09.711070" elapsed="0.036233"/>
+</kw>
+<status status="PASS" start="2024-10-18T13:35:08.399574" elapsed="61.348280"/>
+</test>
+<doc>Login Feature</doc>
+<status status="PASS" start="2024-10-18T13:35:07.617336" elapsed="62.131968"/>
+</suite>
+<status status="PASS" start="2024-10-18T13:35:07.567494" elapsed="62.460365"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="InformaticsAutomation">InformaticsAutomation</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Search functionality">InformaticsAutomation.Search functionality</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
